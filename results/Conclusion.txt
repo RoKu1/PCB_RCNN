@@ -1,0 +1,10 @@
+Object detection is a challenging computer vision task that involves predicting both where the objects 
+are in the image and what type of objects were detected. R-CNN algorithms have truly been a game-changer 
+for object detection tasks. There has suddenly been a spike in recent years in the amount of computer 
+vision applications being created, and R-CNN is at the heart of most of them.
+In the above Project we have proposed a methodology for Fault detection in a printed circuit board.
+The Model was designed and trained for 243 layers of a masked R-CNN and was trained using a GPU on 
+google colab.The weights were saved in a HyPy file and were used to load the model afterwards
+The performance of the model was evaluated using both the test set as refrence as well as the real 
+life image of a printed circuit board that was captured using webcam. The local model was very 
+successfull on the test set with accuracy of 98.7.

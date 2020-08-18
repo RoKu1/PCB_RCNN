@@ -22,16 +22,16 @@ image but also specifes a mask for the image, indicating exactly which pixels in
 compared to a simple or even state-of-the-art deep convolution neural network model. Instead of developing an implementation of the RCNN or Mask RCNN model from scratch,
 we can use a reliable third-party implementation built on top of the Keras deep learning
 framework.
-####- Step 1: Clone the Mask R-CNN GitHub Repository. A repository is like a folder for
+###- Step 1: Clone the Mask R-CNN GitHub Repository. A repository is like a folder for
 your project. Your project’s repository contains all of your project’s fles and stores each
 fle’s revision history. You can also discuss and manage your project’s work within the
 repository. ... Public repositories are visible to everyone. t can be local to a folder on
 your computer, or it can be a storage space on GitHub or another online host. You can
 keep code fles, text fles, image fles, you name it, inside a repository. This will create a
 new local directory with the name Mask RCNN
-####- Step 2: Install the Mask R-CNN Library. The library can be installed directly via
+###- Step 2: Install the Mask R-CNN Library. The library can be installed directly via
 pip.
-####- Step 3: Confrm the Library Was Installed. It is always a good idea to confrm that
+###- Step 3: Confrm the Library Was Installed. It is always a good idea to confrm that
 the library was installed correctly. You can confrm that the library was installed correctly
 by querying it via the pip command; for example: pip show mask-rcnn
 ### 1.2 How to Prepare a Dataset for Object Detection

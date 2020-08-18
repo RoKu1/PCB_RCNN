@@ -22,16 +22,16 @@ image but also specifes a mask for the image, indicating exactly which pixels in
 compared to a simple or even state-of-the-art deep convolution neural network model. Instead of developing an implementation of the RCNN or Mask RCNN model from scratch,
 we can use a reliable third-party implementation built on top of the Keras deep learning
 framework.
-###- Step 1: Clone the Mask R-CNN GitHub Repository. A repository is like a folder for
+#### Step 1: Clone the Mask R-CNN GitHub Repository. A repository is like a folder for
 your project. Your project’s repository contains all of your project’s fles and stores each
 fle’s revision history. You can also discuss and manage your project’s work within the
 repository. ... Public repositories are visible to everyone. t can be local to a folder on
 your computer, or it can be a storage space on GitHub or another online host. You can
 keep code fles, text fles, image fles, you name it, inside a repository. This will create a
 new local directory with the name Mask RCNN
-###- Step 2: Install the Mask R-CNN Library. The library can be installed directly via
+#### Step 2: Install the Mask R-CNN Library. The library can be installed directly via
 pip.
-###- Step 3: Confrm the Library Was Installed. It is always a good idea to confrm that
+#### Step 3: Confrm the Library Was Installed. It is always a good idea to confrm that
 the library was installed correctly. You can confrm that the library was installed correctly
 by querying it via the pip command; for example: pip show mask-rcnn
 ### 1.2 How to Prepare a Dataset for Object Detection
@@ -52,7 +52,7 @@ JPEG photos of missing holes and a subdirectory called ‘annotes/‘ that conta
 the XML fles that describe the locations of missing holes in each photoThis means that
 we should focus on loading the list of actual fles in the directory rather than using a
 numbering system.
-#### Step 2: Parse Annotation File We can see that the annotation fle contains a “size”
+#### Step 2: Parse Annotation File We can see that the annotation file contains a “size”
 element that describes the shape of the photograph, and one or more “object” elements
 that describe the bounding boxes for the missing hole objects in the photograph. The
 size and the bounding boxes are the minimum information that we require from each annotation fle. We could write some careful XML parsing code to process these annotation
@@ -78,7 +78,7 @@ for the background class), and the ‘class name‘ such as missing hole. This w
 which the image was added to the dataset. You can also specify other arguments that will
 18be added to the image info dictionary, such as an ‘annotation‘ to defne the annotation
 path.
-#### Step 4: Test MISSING HOLE Dataset Object The frst useful test is to confrm that
+#### Step 4: Test MISSING HOLE Dataset Object The first useful test is to confrm that
 the images and masks can be loaded correctly. We can test this by creating a dataset
 and loading an image via a call to the load image() function with an image id, then load
 the mask for the image via a call to the load mask() function with the same image id.

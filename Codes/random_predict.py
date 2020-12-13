@@ -67,6 +67,7 @@ class PredictionConfig(Config):
     GPU_COUNT = 1
     IMAGES_PER_GPU = 1
 
+
 #
 # train_set = PcbDataset()
 # train_set.load_dataset("./missing_train/", is_train=True)
@@ -80,7 +81,7 @@ class PredictionConfig(Config):
 cfg = PredictionConfig()
 model = MaskRCNN(mode='inference', model_dir='./', config=cfg)
 # path to model is given below --> specify this according to your system
-model_path = 'Weights/new.h5'
+model_path = 'weights/weight.h5'
 model.load_weights(model_path, by_name=True)
 
 from PIL import Image
